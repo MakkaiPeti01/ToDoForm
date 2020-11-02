@@ -151,6 +151,7 @@
             this.btnListabol.Size = new System.Drawing.Size(40, 40);
             this.btnListabol.TabIndex = 4;
             this.btnListabol.UseVisualStyleBackColor = true;
+            this.btnListabol.Click += new System.EventHandler(this.btnListabol_Click);
             // 
             // btnKivesz
             // 
@@ -174,11 +175,13 @@
             // 
             // btnKilepes
             // 
-            this.btnKilepes.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnKilepes.Location = new System.Drawing.Point(414, 334);
+            this.btnKilepes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnKilepes.Image = global::ToDoForm.Properties.Resources.exit_small;
+            this.btnKilepes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKilepes.Location = new System.Drawing.Point(405, 325);
             this.btnKilepes.Name = "btnKilepes";
-            this.btnKilepes.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.btnKilepes.Size = new System.Drawing.Size(107, 40);
+            this.btnKilepes.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
+            this.btnKilepes.Size = new System.Drawing.Size(130, 49);
             this.btnKilepes.TabIndex = 7;
             this.btnKilepes.Text = "Kilépés";
             this.btnKilepes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

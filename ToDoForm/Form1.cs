@@ -33,5 +33,11 @@ namespace ToDoForm
             lbTodo.Items.Clear();
             tbBevitel.Focus();
         }
+
+        private void btnListabol_Click(object sender, EventArgs e)
+        {
+            frmLista formLista = new frmLista();
+            formLista.ShowDialog();
+        }
     }
 }
