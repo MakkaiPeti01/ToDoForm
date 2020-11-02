@@ -10,11 +10,28 @@ using System.Windows.Forms;
 
 namespace ToDoForm
 {
-    public partial class Form1 : Form
+    public partial class frmKezdo : Form
     {
-        public Form1()
+        public frmKezdo()
         {
             InitializeComponent();
+        }
+
+        private void mKilepes_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnKilepes_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void frmKezdo_Shown(object sender, EventArgs e)
+        {
+            tbBevitel.Text = "";
+            lbTodo.Items.Clear();
+            tbBevitel.Focus();
         }
     }
 }
